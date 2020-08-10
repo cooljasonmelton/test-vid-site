@@ -7,7 +7,12 @@ const VideoContainer = () => {
   return (
     <div className="VideoContainer cfb">
 
-        <video className="da-video" 
+
+
+
+      
+
+        {/* <video className="da-video" 
             width="320" 
             height="240" 
             preload 
@@ -16,7 +21,7 @@ const VideoContainer = () => {
             <source src={hawkstorm} type="video/mp4"/>
 
             Your browser does not support the video tag.
-        </video>
+        </video> */}
 
     </div>
   );
