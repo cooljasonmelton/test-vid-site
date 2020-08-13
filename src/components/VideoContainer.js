@@ -1,21 +1,29 @@
 import React from 'react';
 import '../App.css';
-import hawkstorm from './hawkstorm-global.mp4';
 
 
 const VideoContainer = () => {
   return (
-    <div className="VideoContainer cfb">
-      <video className="da-video" 
-          width="320" 
-          height="240" 
-          preload 
-          controls>
-          
-          <source src={hawkstorm} type="video/mp4"/>
+    <div className="VideoContainer window" >
+        <div className="title-bar">
+          <div className="title-bar-text"> Operation Samurai Eagle </div>
+          <div className="title-bar-controls">
+            <button>C</button>
+            <button>M</button>
+            <button>J</button>
+          </div>
+        </div>
 
-          Your browser does not support the video tag.
-      </video>
+      <div className="cfb">
+        <iframe width="1440" 
+          height="524" 
+          src="https://www.youtube.com/embed/w7fLe0prRa0" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
     </div>
   );
 }
